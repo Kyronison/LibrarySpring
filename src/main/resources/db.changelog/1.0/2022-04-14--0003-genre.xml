@@ -6,14 +6,14 @@
         http://www.liquibase.org/xml/ns/dbchangelog-ext  http://www.liquibase.org/xml/ns/dbchangelog-ext.xsd">
 
 
-    <changeSet id="2022-04-14--0002-author" author="anepr">
+    <changeSet id="2022-04-14--0003-genre" author="anepr">
         <preConditions>
             <not>
-                <tableExists tableName="author"/>
+                <tableExists tableName="genre"/>
             </not>
         </preConditions>
-        
-        <createTable tableName="author">
+
+        <createTable tableName="genre">
             <column name="id"
                     type="NUMERIC(19,0)"
                     autoIncrement="true">
